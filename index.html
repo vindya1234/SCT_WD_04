@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+
+        <!-- Add Task Form -->
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task" />
+            <input type="datetime-local" id="task-date" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Task List Section -->
+        <div class="task-list">
+            <h2>Your Tasks</h2>
+            <ul id="task-list"></ul>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="clear-all-btn" onclick="clearAllTasks()">Clear All Tasks</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
